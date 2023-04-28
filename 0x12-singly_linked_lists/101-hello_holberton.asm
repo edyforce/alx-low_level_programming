@@ -1,6 +1,9 @@
 SECTION .data
+msg:   db "Hello, Holberton", 0
+fmt:   db "%s", 10, 0
 
- global    main
+	SECTION .text
+	global    main
           extern    printf
 main:
 	  mov   edi, fmt
